@@ -1,6 +1,10 @@
 <deportistas>
 <deportista>
-<deporte Atletismo /> <nombre>Jesse Owens</nombre>
+<deporte>Atletismo</deporte>  
+<nombre>Jesse Owens</nombre>
+</deportista>
 <deportista>
-<deporte Natación /> <nombre>Mark Spitz</nombre>
-</deportista> </deportistas>
+<deporte>Natación</deporte> 
+<nombre>Mark Spitz</nombre>
+</deportista>
+</deportistas>
