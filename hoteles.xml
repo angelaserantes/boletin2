@@ -1,4 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE registro [
+<!ELEMENT registro (hotel)*>
+<!ELEMENT hotel (nombre,telefono,direccion,ciudad,pais,estrellas,descripcion,habitaciones)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT direccion (calle,numero)>
+<!ELEMENT calle (#PCDATA)>
+<!ATTLIST calle nombre  ID #REQUIRED>
+<!ELEMENT numero (#PCDATA)>
+<!ATTLIST numero numero  CDATA #REQUIRED>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT estrellas (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT habitaciones (individuales,dobles,triples,suites)>
+<!ELEMENT individuales (#PCDATA)>
+<!ATTLIST individuales numero CDATA #REQUIRED>
+<!ELEMENT dobles (#PCDATA)>
+<!ATTLIST dobles numero CDATA #REQUIRED>
+<!ELEMENT triples (#PCDATA)>
+<!ATTLIST triples numero CDATA #REQUIRED>
+<!ELEMENT suites (#PCDATA)>
+<!ATTLIST suites numero CDATA #REQUIRED>
+]>
+
+<registro>
+    <hotel>
+        <nombre>Hotel Nh Colecctions</nombre>
+        <telefono>986411624</telefono>
+        <direccion>
+            <calle nombre="Florida">Avenida de Florida</calle>
+            <numero numero="56">56</numero>
+        </direccion>
+        <ciudad>Vigo</ciudad>
+        <pais>España</pais>
+        <estrellas> 4 estrellas</estrellas>
+        <descripcion>Hotel con Balneario en plena ciudad</descripcion>
+        <habitaciones>
+            <individuales numero="20">Veinte</individuales>
+            <dobles numero="30">Treinta</dobles>
+            <triples numero="60">Sesenta</triples>
+            <suites numero="5">Cinco</suites>
+        </habitaciones>
+    </hotel>
+    <hotel>
+        <nombre>Hotel Bahía</nombre>
+        <telefono>986211033</telefono>
+        <direccion>
+            <calle nombre="Bahía">Berbés</calle>
+            <numero numero="86">86</numero>
+        </direccion>
+        <ciudad>Vigo</ciudad>
+        <pais>España</pais>
+        <estrellas> 4 estrellas</estrellas>
+        <descripcion>Hotel con exclusivas vistas al mar</descripcion>
+        <habitaciones>
+            <individuales numero="50">Cincuenta</individuales>
+            <dobles numero="42">Cuarenta y dos</dobles>
+            <triples numero="70">Setenta</triples>
+            <suites numero="10">Diez</suites>
+        </habitaciones>
+    </hotel>
+</registro>
+
+
 <!-- Completar este documento para registrar hoteles,
     donde tengas nombre, teléfono, dirección(calle y número),
     ciudad, país, numero de estrellas, descripción del hotel,
